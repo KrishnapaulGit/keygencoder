@@ -281,8 +281,8 @@ section {
   .ScrollTop.active{
     bottom: 40px;
     visibility: visible;
-    opacity: 0.8;
-    right: 7px;
+    opacity: 0.5;
+    right: 24px;
     
   }
 
@@ -405,7 +405,7 @@ section {
 #keygenlogo{
     height: 50px;
     width: 50px;
-    padding-right: 5px;
+    padding-right: 10px;
     image-resolution: 100%;
     
 
@@ -453,7 +453,7 @@ section {
 #banner h1 {
     color: #fff;
     margin: 0 0 25px;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 #banner p {
@@ -670,21 +670,22 @@ section {
     margin-bottom: 0;
     margin-top: auto;
     padding-bottom: 5px;
-    font-weight: 700;
+    font-weight: 600;
     text-shadow: -2px -2px 0 rgb(25, 117, 154), 2px -2px 0 rgb(14, 70, 80), -2px 2px 0 black, 2px 2px 0 black;
     
   }
 
 #members .text, #resource-section .text{
     color: white;
-    font-size: 20px;
-    font-family: serif;
-    text-align: justify;
     padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 47px;
+    padding-right: 47px;
 
-    padding-bottom: 15px;
+    padding-bottom: 0;
+    text-align: justify;
+    font-family: sans-serif;
+    font-weight: 600;
 
 }
 .members-container{
@@ -699,6 +700,7 @@ section {
         display: inline-block;
         cursor: pointer;
         transition: background 0.5s;
+        /* border: 10px; */
 
     }
 
@@ -726,38 +728,44 @@ section {
         height: 100%;
         position: absolute;
         backface-visibility: hidden;
+        box-shadow: 3px 3px 5px rgba(209, 207, 207, 0.883);
+        border-bottom: none;
+
     }
     
 
     /* Course card front */
     .member-card-front {
-        background: rgba(57, 59, 60, 0.437);
+        background: rgba(50, 51, 52, 0.917);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        border: 1px solid #ccc;
+        border: 3px solid #ccc;
         border-radius: 5px;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
     }
 
     .member-title {
-        font-size: 24px;
+        color: white;
+        font-size: 22px;
+        font-family: sans-serif;
         font-weight: bold;
         margin-top: 20px; /* Space above the title */
-        font-weight: 600;
+        /* font-weight: 400; */
+        /* text-shadow: 0 0 0 rgb(25, 117, 154), 2px -2px 0 rgb(14, 70, 80), -2px 2px 0 black, 2px 2px 0 black; */
+
     }
 
     .member-details {
         font-size: 17.5px;
-        color: #7a7878f1;
+        color: #eee8e8f1;
         font-weight: 400;
     }
 
     .member-image {
         width: 165px;
         height: 150px;
-        border-color: #007bff;
+        border-color: #1279e8e7;
         border-style: solid;
         border-radius: 50%;
         margin-top: 20px;
@@ -781,9 +789,9 @@ section {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        border: 1px solid #ccc;
+        border: 3px solid #ccc;
         border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(238, 235, 235, 0.657);
+        
     }
 
     .member-card-back i:hover{
@@ -833,6 +841,22 @@ section {
             max-width: none; /* Remove the maximum width */
             
         }
+        .member-title {
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-top: 20px; /* Space above the title */
+            /* font-weight: 400; */
+            text-shadow: -1px -1px 0 rgb(25, 117, 154), 2px -2px 0 rgb(14, 70, 80), -2px 2px 0 black, 2px 2px 0 black;
+    
+        }
+    
+        .member-details {
+            font-size: 15px;
+            color: #eee8e8f1;
+            font-weight: 400;
+        }
        
         
     }
@@ -867,10 +891,10 @@ section {
 /* Base styles for course cards */
 .course-card {
     width: 180px;
-    background-color:  #383b3ba6;
+    background-color:  #383b3bd9;
     border: 1px solid #ccc;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(187, 184, 184, 0.1);
+    box-shadow: 3px 3px 5px rgba(209, 207, 207, 0.883);
     margin: 10px;
     padding: 10px;
     display: inline-block;
@@ -891,12 +915,14 @@ section {
 .course-title {
     font-size: 1.5em;
     font-weight: bold;
+    /* padding-top: 5px; */
+    color: rgba(255, 255, 255, 0.886);
 }
 
 /* Course description style */
 .course-description {
     font-size: 1em;
-    color: #555;
+    color: whitesmoke;
 }
 
 /*Get Resource*/
@@ -908,7 +934,7 @@ section {
 
 /* Image style */
 .course-image {
-    max-width: 50px;
+    max-width: 80px;
     height: auto;
     border-radius: 50%;
     display: block;
@@ -963,12 +989,12 @@ section {
   } */
   #about h1, #resource-section h1, #contact-us h1, #events .container h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     color: white;
     margin-bottom: 0;
     margin-top: auto;
     padding-bottom: 5px;
-    font-weight: 700;
+    font-weight: 600;
     text-shadow: -2px -2px 0 rgb(25, 117, 154), 2px -2px 0 rgb(14, 70, 80), -2px 2px 0 black, 2px 2px 0 black;
     
   }
@@ -1015,7 +1041,11 @@ section {
   }
   .about-right-col span p{
     color: white;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+
     padding-bottom: 0;
     text-align: justify;
     font-family: sans-serif;
@@ -1498,6 +1528,56 @@ section {
     margin-bottom: 0%;
     font-size: 12px;
 }
+#version{
+    text-align: center;
+    color:rgba(245, 245, 245, 0.409);
+    margin-bottom: 0%;
+    font-size: 12px;
+}
+
+/* Image Pop-up Poster styles */
+#imagePopup {
+    display: none;
+    position: fixed;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #323030;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+}
+
+#imagePopup img {
+    width: 400px;
+    height: 550px;
+}
+
+#imageCloseButton {
+    position: absolute;
+    top: -1px;
+    right: 1px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    #imagePopup {
+        padding: 10px;
+    }
+    #imagePopup img {
+        width: 300px;
+        height: 400px;
+    }
+}
+
 
 
 /*======================================== Responsive Design =============================*/
@@ -1673,7 +1753,7 @@ section {
         width: 100%;
     }
     #banner h1 {
-        font-size: 35px;
+        font-size: 32px;
         margin: 0 0 10px;
     }
     #banner p {
@@ -2086,3 +2166,5 @@ section {
         /* margin-top: 0%; */
     }
 }
+
+

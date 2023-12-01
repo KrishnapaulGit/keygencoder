@@ -13,10 +13,9 @@ Version      : 1.0
 #5. Events
 #6. Members
 #7. Resources
-#8. Contact Us / Join Us
+#8. Contact Us
 #9. Footer
 #10. Responsive
-#11. PopUp Poster
 =================================================
 */
 
@@ -810,13 +809,13 @@ section {
         
     }
 
-    .member-description {
-        font-size: 16px;
+    .member-description  {
+        font-size: 18px;
         color: whitesmoke;
-        align-content: baseline;
-        text-align:justify;
-        padding-left: 20px;
-        padding-right: 20px;
+        /* align-content: baseline; */
+        text-align:center;
+        /* padding-left: 20px;
+        padding-right: 20px; */
 
     }
 
@@ -1081,7 +1080,7 @@ section {
     margin-left: 40px;
   }
 }
-/***************** Contact Section- Join Us Section *************************/
+/***************** Contact Section *************************/
 #contact-us{
     border-bottom: whitesmoke 0.1px solid;
 
@@ -1540,7 +1539,7 @@ section {
 #imagePopup {
     display: none;
     position: fixed;
-    top: 58%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #323030;
@@ -1553,8 +1552,8 @@ section {
 }
 
 #imagePopup img {
-    width: 400px;
-    height: 550px;
+    width: 300px;
+    height: 400px;
 }
 
 #imageCloseButton {
@@ -1573,11 +1572,9 @@ section {
     #imagePopup {
         padding: 10px;
     }
-    #imagePopup img {
-        width: 300px;
-        height: 400px;
-    }
+    
 }
+
 
 
 

@@ -2165,4 +2165,50 @@ section {
     }
 }
 
+.keygen-header{
+    padding: .3rem 2rem;
+    box-shadow: 0px 0px 5px 1px grey;
+    border-radius: 3rem;
+    margin: 1rem 0 2rem 0;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
 
+.keygen-container{
+    padding: 0 0 2rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text{
+    color: blue;
+}
+.student-card{
+    padding: 0 0 2rem 0;
+}
+.intern-conatiner{
+    padding: 2rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    width: fit-content;
+    grid-template-columns: auto auto auto auto;
+}
+@media (max-width: 800px) {
+    .intern-conatiner{
+        grid-template-columns: auto auto;
+    }
+}
+.student-image{
+    width: 130px;
+    height: 130px;
+    border-radius: 100vw;
+}

@@ -23,8 +23,8 @@
     <!-- font-awesome-->
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
     <!--Wow animation-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!--Owl Carousel-->
     <link href="css/owl.carousel.css" rel="stylesheet">
     <!-- Main CSS -->
@@ -34,6 +34,13 @@
     <!--Icons-->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <!-- Firebase Authentication SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
 
 
 </head>
@@ -47,115 +54,120 @@
     </div>
     <!--Scroll Top-->
     <div class="ScrollTop" onclick="scrollToTop();"></div>
-<!-- <section class="animate__animated wow animate__fadeInDown" id="main-section"> -->
-<section class="body-section">
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="navbar-header page-scroll">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-							<span class="sr-only"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-                        <a class="navbar-brand page-scroll" href="./" id="logo">
-                            
-                            <font style="color:white;font-family:sans-serif; font-size:200%; text-align:center; font-weight:800"><img src="img/keygenlogo.png" id="keygenlogo">KeyGEnCoders</font>
-                        </a>
+    <!-- <section class="animate__animated wow animate__fadeInDown" id="main-section"> -->
+    <section class="body-section">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="navbar-header page-scroll">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                                <span class="sr-only"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand page-scroll" href="./" id="logo">
+
+                                <font
+                                    style="color:white;font-family:sans-serif; font-size:200%; text-align:center; font-weight:800">
+                                    <img src="img/keygenlogo.png" id="keygenlogo">KeyGEnCoders
+                                </font>
+                            </a>
+                        </div>
+
+                        <!-- Collect the nav links and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active">
+                                    <a class="page-scroll" href="#page-top">Home</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="#about">About Us</a>
+                                </li>
+
+                                <li>
+                                    <a class="page-scroll" href="#events">Events</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="#members">Family</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="#resource-section">Resources</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="#contact-us">Join Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
                     </div>
-
-                    <!-- Collect the nav links and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active">
-                                <a class="page-scroll" href="#page-top">Home</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#about">About Us</a>
-                            </li>
-                        
-                            <li>
-                                <a class="page-scroll" href="#events">Events</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#members">Family</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#resource-section">Resources</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#contact-us">Join Us</a>
-                            </li>
-
-                            <li><a class="page-scroll" href="login.php">Login</a></li>
-
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
                 </div>
+
             </div>
-
-        </div>
-        <!-- /.container -->
-    </nav>
+            <!-- /.container -->
+        </nav>
 
 
-    <!-- Banner Section -->
-    <div id="banner" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="img/banner/kgec-img.jpeg">
-                <div class="caption-info">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-8 col-md-offset-2">
-                                <div class="caption-info-inner text-center">
-                                    <h1 class="animated fadeInDown" style="font-weight: 700; color: #008080;">UTLIMATE CODING CLUB</h1>
-                                    <p class="animated fadeInUp" style="font-weight: 700; color: #000;">Kalyani Government Engineering College</p>
-                                    <a target="_blank" href="#contact-us" class="animated fadeInUp btn btn-primary page-scroll">Follow Us</a>
+        <!-- Banner Section -->
+        <div id="banner" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/banner/kgec-img.jpeg">
+                    <div class="caption-info">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                    <div class="caption-info-inner text-center">
+                                        <h1 class="animated fadeInDown" style="font-weight: 700; color: #008080;">
+                                            UTLIMATE CODING CLUB</h1>
+                                        <p class="animated fadeInUp" style="font-weight: 700; color: #000;">Kalyani
+                                            Government Engineering College</p>
+                                        <a target="_blank" href="#contact-us"
+                                            class="animated fadeInUp btn btn-primary page-scroll">Follow Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="img/banner/2.jpg">
+                    <div class="caption-info">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                    <div class="caption-info-inner text-center">
+                                        <h1 class="animated zoomIn">BOOST YOUR SKILLS</h1>
+                                        <p class="animated zoomIn">Start Peer to Peer learning with your colleagues</p>
+                                        <a href="#resource-section"
+                                            class="animated zoomIn btn btn-primary page-scroll">Let's Start</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+            <!--end carousel-inner-->
 
-            <div class="item">
-                <img src="img/banner/2.jpg">
-                <div class="caption-info">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-8 col-md-offset-2">
-                                <div class="caption-info-inner text-center">
-                                    <h1 class="animated zoomIn">BOOST YOUR SKILLS</h1>
-                                    <p class="animated zoomIn">Start Peer to Peer learning with your colleagues</p>
-                                    <a href="#resource-section" class="animated zoomIn btn btn-primary page-scroll">Let's Start</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            <!-- Controls -->
+            <a class="control left" href="index.html#banner" data-slide="prev"><i class="fas fa-arrow-left"></i></a>
+            <a class="right control" href="index.html#banner" data-slide="next"><i class="fas fa-arrow-right"></i></a>
         </div>
-        <!--end carousel-inner-->
+        <!--end Banner-->
 
-
-        <!-- Controls -->
-        <a class="control left" href="index.html#banner" data-slide="prev"><i class="fas fa-arrow-left"></i></a>
-        <a class="right control" href="index.html#banner" data-slide="next"><i class="fas fa-arrow-right"></i></a>
-    </div>
-    <!--end Banner-->
-
-    <!--About Us-->
-    <section id="about" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/Background/about.jpg);">
+        <!--About Us-->
+        <section id="about" class="parallax" data-stellar-background-ratio="0.5"
+            style="background-image: url(img/Background/about.jpg);">
             <!-- <div class="section-info"> -->
-                <h1 class="animate__animated wow animate__fadeInUp">About Us</h1>
-                <!-- <p>༺ Who We Are ༻</p> -->
+            <h1 class="animate__animated wow animate__fadeInUp">About Us</h1>
+            <!-- <p>༺ Who We Are ༻</p> -->
             <!-- </div> -->
             <div class="about-row">
                 <div class="about-left-col animate__animated wow animate__fadeInUp">
@@ -164,196 +176,228 @@
                 <div class="about-right-col">
                     <span class="animate__animated wow animate__fadeInUp about_span">
                         <!-- <h1>Hey there !</h1> -->
-                    <p>
-                        Established on March 14, 2015, coincidentally celebrated as 'Pi' day (3.14), KeyGen Coder has evolved from a modest initiative into a formidable organization, thanks to the leadership of Sushobon Gosh, Ratul Bhattarchya, and Soumyadeep Roy. Marking its inception with the first official contest on March 27, 2015, the club has fostered a legacy of success. Despite the challenges posed by the pandemic, KeyGen Coder remains steadfast in its commitment to nurturing problem solvers and coders. Members have achieved remarkable success, securing coveted positions at top companies. Looking ahead, the club aspires to broaden its horizons, introducing new departments and opportunities for members to learn and excel. Aspiring coders and problem solvers are warmly invited to join and contribute to the enduring legacy of KeyGen Coder.
-                     </p>
-                 </span>
-                  
+                        <p>
+                            Established on March 14, 2015, coincidentally celebrated as 'Pi' day (3.14), KeyGen Coder
+                            has evolved from a modest initiative into a formidable organization, thanks to the
+                            leadership of Sushobon Gosh, Ratul Bhattarchya, and Soumyadeep Roy. Marking its inception
+                            with the first official contest on March 27, 2015, the club has fostered a legacy of
+                            success. Despite the challenges posed by the pandemic, KeyGen Coder remains steadfast in its
+                            commitment to nurturing problem solvers and coders. Members have achieved remarkable
+                            success, securing coveted positions at top companies. Looking ahead, the club aspires to
+                            broaden its horizons, introducing new departments and opportunities for members to learn and
+                            excel. Aspiring coders and problem solvers are warmly invited to join and contribute to the
+                            enduring legacy of KeyGen Coder.
+                        </p>
+                    </span>
+
                 </div>
             </div>
-    </section>
+        </section>
 
 
-    <!--Events Section-->
-    <section id="events" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/Background/event-back.jpg);">
-        <div class="container">
-           <h1 class="animate__animated wow animate__fadeInUp">Our Events</h1>
+        <!--Events Section-->
+        <section id="events" class="parallax" data-stellar-background-ratio="0.5"
+            style="background-image: url(img/Background/event-back.jpg);">
+            <div class="container">
+                <h1 class="animate__animated wow animate__fadeInUp">Our Events</h1>
 
-            <div class="animate__animated wow animate__fadeInUp row">
-                <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-                    <div class="owl-carousel" id="testimonial-carousel">
-                        <div class="testimonial-item text-center">
-                            <!-- <i class="fa fa-quote-left"></i> -->
-                            <div class="author-comments">
-                                <p>Join us on August 29, 2024, at 11:00 AM in the Seminar Hall for the exclusive KeyGEnCoders Prize Distribution Ceremony.</p>
-                            </div>
-                            <div class="designation">
-                                Prize Distribution Ceremony - <strong>August 29, 2024</strong>
-                            </div>
-                            <div class="author">
-                                <img src="img/Events/2024.08.29 Prize.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <!-- <i class="fa fa-quote-left"></i> -->
-                            <div class="author-comments">
-                                <p>Join us on May 17, 2024, at 7:00 PM in the Coding Ninjas platform for the exclusive KeyGEnCoders Code Blitz 3.0.</p>
-                            </div>
-                            <div class="designation">
-                                Code Blitz 3.0 - <strong>May 17, 2024</strong>
-                            </div>
-                            <div class="author">
-                                <img src="img/Events/2024.05.17 Code Blitz 3.0.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <!-- <i class="fa fa-quote-left"></i> -->
-                            <div class="author-comments">
-                                <p>Join us on April 15, 2024, at 7:00 PM for the exclusive KeyGEnCoders Campus Hero Webinar.</p>
-                            </div>
-                            <div class="designation">
-                                Campus Hero Webinar - <strong>April 15, 2024</strong>
-                            </div>
-                            <div class="author">
-                                <img src="img/Events/2024.04.15 Webinar.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <!-- <i class="fa fa-quote-left"></i> -->
-                            <div class="author-comments">
-                                <p>Join us on March 21, 2024, at 10:00 AM in the MSB 109 for the exclusive Code Buzz event of ESPEKTRO 2024.</p>
-                            </div>
-                            <div class="designation">
-                                Code Buzz - <strong>March 21, 2024</strong>
-                            </div>
-                            <div class="author">
-                                <img src="img/Events/Code Buzz.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <!-- <i class="fa fa-quote-left"></i> -->
-                            <div class="author-comments">
-                                <p>Join us on March 20, 2024, at 1:00 PM in the MSB 109 for the exclusive Code Buzz event of ESPEKTRO 2024.</p>
-                            </div>
-                            <div class="designation">
-                                Puzzlify - <strong>March 20, 2024</strong>
-                            </div>
-                            <div class="author">
-                                <img src="img/Events/Puzzlify.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <!-- <i class="fa fa-quote-left"></i> -->
-                            <div class="author-comments">
-                                <p>Join us on March 20, 2024, at 11:00 AM in the MSB 109 for the exclusive Code Buzz event of ESPEKTRO 2024.</p>
-                            </div>
-                            <div class="designation">
-                                Code Dictator - <strong>March 20, 2024</strong>
-                            </div>
-                            <div class="author">
-                                <img src="img/Events/Code Dictator.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <!-- <i class="fa fa-quote-left"></i> -->
-                            <div class="author-comments">
-                                <p>Join us on March 19, 2024, at 11:00 AM in the MSB 109 for the exclusive Code Buzz event of ESPEKTRO 2024.</p>
-                            </div>
-                            <div class="designation">
-                                Fix the Bug - <strong>March 19, 2024</strong>
-                            </div>
-                            <div class="author">
-                                <img src="img/Events/Fix the Bug.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <!-- <i class="fa fa-quote-left"></i> -->
-                            <div class="author-comments">
-                                <p>Join us on March 2, 2024, at 6:00 PM for the exclusive KeyGEnCoders Campus Hero Webinar.</p>
-                            </div>
-                            <div class="designation">
-                                Campus Hero Webinar - <strong>March 2, 2024</strong>
-                            </div>
-                            <div class="author">
-                                <img src="img/Events/2024.03.02 Webinar.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <!-- <i class="fa fa-quote-left"></i> -->
-                            <div class="author-comments">
-                                <p>Join us on Friday, December 1st, at 1:00 PM in the Seminar Hall for the exclusive KeyGEnCoders Orientation Program.</p>
-                            </div>
-                            <div class="designation">
-                                Freshers Orientation Programme - <strong>December 1, 2023</strong>
-                            </div>
-                            <div class="author">
-                                <img src="img/Events/freshers_orientation.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <!-- <i class="fa fa-quote-left"></i> -->
-                            <div class="author-comments">
-                                <p>Join us on December 1st, at 4:00 PM in the Seminar Hall for the exclusive KeyGEnCoders Orientation Program.</p>
-                            </div>
-                            <div class="designation">
-                                Seminar on Placement Insights - <strong>December 1, 2023</strong>
-                            </div>
-                            <div class="author">
-                                <img src="img/Events/2023.12.01 Seminar.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <!-- <i class="fa fa-quote-left"></i> -->
-                            <div class="author-comments">
-                                <p>Join us for the KeyGEnCoders interview event. This exclusive opportunity is open to 2nd-year and above students.
-                                    We look forward to meeting talented coders and potential future members of our club!  
-                                </p>
-                            </div>
-                            <div class="designation">
-                                Reqruitment 2.0 <strong>October 9 , 2023</strong>
-                            </div>
-                            <div class="author">
-                                <img src="img/Events/reqruit2.0.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <!-- <i class="fa fa-quote-left"></i> -->
-                            <div class="author-comments">
-                                <p>Join us live on Friday, October 6th, at 7 PM for the KeyGEnCoders orientation program exclusively for students of 2nd-year and above. Discover exciting opportunities to enhance your coding skills, network with like-minded peers, and delve into the world of technology.
-                                 </p>   
+                <div class="animate__animated wow animate__fadeInUp row">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+                        <div class="owl-carousel" id="testimonial-carousel">
+                            <div class="testimonial-item text-center">
+                                <!-- <i class="fa fa-quote-left"></i> -->
+                                <div class="author-comments">
+                                    <p>Join us on August 29, 2024, at 11:00 AM in the Seminar Hall for the exclusive
+                                        KeyGEnCoders Prize Distribution Ceremony.</p>
                                 </div>
-                            <div class="designation">
-                                Orientation Programme 2.0 -<strong>October 6, 2023</strong>
+                                <div class="designation">
+                                    Prize Distribution Ceremony - <strong>August 29, 2024</strong>
+                                </div>
+                                <div class="author">
+                                    <img src="img/Events/2024.08.29 Prize.jpg" alt="" />
+                                </div>
                             </div>
-                            <div class="author">
-                                <img src="img/Events/orientation2.jpg" alt="" />
+                            <div class="testimonial-item text-center">
+                                <!-- <i class="fa fa-quote-left"></i> -->
+                                <div class="author-comments">
+                                    <p>Join us on May 17, 2024, at 7:00 PM in the Coding Ninjas platform for the
+                                        exclusive KeyGEnCoders Code Blitz 3.0.</p>
+                                </div>
+                                <div class="designation">
+                                    Code Blitz 3.0 - <strong>May 17, 2024</strong>
+                                </div>
+                                <div class="author">
+                                    <img src="img/Events/2024.05.17 Code Blitz 3.0.jpg" alt="" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <!-- <i class="fa fa-quote-left"></i> -->
-                            <div class="author-comments">
-                                <p>Get ready to unleash your coding skills at Code Blitz, organized by KeyGEnCoders! Join us for an exhilarating battle of algorithms, where you'll have the chance to showcase your coding skills and compete with the best. 
-                                </p>
+                            <div class="testimonial-item text-center">
+                                <!-- <i class="fa fa-quote-left"></i> -->
+                                <div class="author-comments">
+                                    <p>Join us on April 15, 2024, at 7:00 PM for the exclusive KeyGEnCoders Campus Hero
+                                        Webinar.</p>
+                                </div>
+                                <div class="designation">
+                                    Campus Hero Webinar - <strong>April 15, 2024</strong>
+                                </div>
+                                <div class="author">
+                                    <img src="img/Events/2024.04.15 Webinar.jpg" alt="" />
+                                </div>
                             </div>
-                            <div class="designation">
-                                Coding Competition -<strong>September 22, 2023</strong>
+                            <div class="testimonial-item text-center">
+                                <!-- <i class="fa fa-quote-left"></i> -->
+                                <div class="author-comments">
+                                    <p>Join us on March 21, 2024, at 10:00 AM in the MSB 109 for the exclusive Code Buzz
+                                        event of ESPEKTRO 2024.</p>
+                                </div>
+                                <div class="designation">
+                                    Code Buzz - <strong>March 21, 2024</strong>
+                                </div>
+                                <div class="author">
+                                    <img src="img/Events/Code Buzz.jpg" alt="" />
+                                </div>
                             </div>
-                            <div class="author">
-                                <img src="img/Events/code_blitz.jpg" alt="" />
+                            <div class="testimonial-item text-center">
+                                <!-- <i class="fa fa-quote-left"></i> -->
+                                <div class="author-comments">
+                                    <p>Join us on March 20, 2024, at 1:00 PM in the MSB 109 for the exclusive Code Buzz
+                                        event of ESPEKTRO 2024.</p>
+                                </div>
+                                <div class="designation">
+                                    Puzzlify - <strong>March 20, 2024</strong>
+                                </div>
+                                <div class="author">
+                                    <img src="img/Events/Puzzlify.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="testimonial-item text-center">
+                                <!-- <i class="fa fa-quote-left"></i> -->
+                                <div class="author-comments">
+                                    <p>Join us on March 20, 2024, at 11:00 AM in the MSB 109 for the exclusive Code Buzz
+                                        event of ESPEKTRO 2024.</p>
+                                </div>
+                                <div class="designation">
+                                    Code Dictator - <strong>March 20, 2024</strong>
+                                </div>
+                                <div class="author">
+                                    <img src="img/Events/Code Dictator.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="testimonial-item text-center">
+                                <!-- <i class="fa fa-quote-left"></i> -->
+                                <div class="author-comments">
+                                    <p>Join us on March 19, 2024, at 11:00 AM in the MSB 109 for the exclusive Code Buzz
+                                        event of ESPEKTRO 2024.</p>
+                                </div>
+                                <div class="designation">
+                                    Fix the Bug - <strong>March 19, 2024</strong>
+                                </div>
+                                <div class="author">
+                                    <img src="img/Events/Fix the Bug.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="testimonial-item text-center">
+                                <!-- <i class="fa fa-quote-left"></i> -->
+                                <div class="author-comments">
+                                    <p>Join us on March 2, 2024, at 6:00 PM for the exclusive KeyGEnCoders Campus Hero
+                                        Webinar.</p>
+                                </div>
+                                <div class="designation">
+                                    Campus Hero Webinar - <strong>March 2, 2024</strong>
+                                </div>
+                                <div class="author">
+                                    <img src="img/Events/2024.03.02 Webinar.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="testimonial-item text-center">
+                                <!-- <i class="fa fa-quote-left"></i> -->
+                                <div class="author-comments">
+                                    <p>Join us on Friday, December 1st, at 1:00 PM in the Seminar Hall for the exclusive
+                                        KeyGEnCoders Orientation Program.</p>
+                                </div>
+                                <div class="designation">
+                                    Freshers Orientation Programme - <strong>December 1, 2023</strong>
+                                </div>
+                                <div class="author">
+                                    <img src="img/Events/freshers_orientation.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="testimonial-item text-center">
+                                <!-- <i class="fa fa-quote-left"></i> -->
+                                <div class="author-comments">
+                                    <p>Join us on December 1st, at 4:00 PM in the Seminar Hall for the exclusive
+                                        KeyGEnCoders Orientation Program.</p>
+                                </div>
+                                <div class="designation">
+                                    Seminar on Placement Insights - <strong>December 1, 2023</strong>
+                                </div>
+                                <div class="author">
+                                    <img src="img/Events/2023.12.01 Seminar.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="testimonial-item text-center">
+                                <!-- <i class="fa fa-quote-left"></i> -->
+                                <div class="author-comments">
+                                    <p>Join us for the KeyGEnCoders interview event. This exclusive opportunity is open
+                                        to 2nd-year and above students.
+                                        We look forward to meeting talented coders and potential future members of our
+                                        club!
+                                    </p>
+                                </div>
+                                <div class="designation">
+                                    Reqruitment 2.0 <strong>October 9 , 2023</strong>
+                                </div>
+                                <div class="author">
+                                    <img src="img/Events/reqruit2.0.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="testimonial-item text-center">
+                                <!-- <i class="fa fa-quote-left"></i> -->
+                                <div class="author-comments">
+                                    <p>Join us live on Friday, October 6th, at 7 PM for the KeyGEnCoders orientation
+                                        program exclusively for students of 2nd-year and above. Discover exciting
+                                        opportunities to enhance your coding skills, network with like-minded peers, and
+                                        delve into the world of technology.
+                                    </p>
+                                </div>
+                                <div class="designation">
+                                    Orientation Programme 2.0 -<strong>October 6, 2023</strong>
+                                </div>
+                                <div class="author">
+                                    <img src="img/Events/orientation2.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="testimonial-item text-center">
+                                <!-- <i class="fa fa-quote-left"></i> -->
+                                <div class="author-comments">
+                                    <p>Get ready to unleash your coding skills at Code Blitz, organized by KeyGEnCoders!
+                                        Join us for an exhilarating battle of algorithms, where you'll have the chance
+                                        to showcase your coding skills and compete with the best.
+                                    </p>
+                                </div>
+                                <div class="designation">
+                                    Coding Competition -<strong>September 22, 2023</strong>
+                                </div>
+                                <div class="author">
+                                    <img src="img/Events/code_blitz.jpg" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <!--Members  Section -->
-    <section id="members" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/Background/member.jpg);">
-        <h1 class=" member-head animate__animated wow animate__fadeInUp">KeyGEn Family</h1>
+        <!--Members  Section -->
+        <section id="members" class="parallax" data-stellar-background-ratio="0.5"
+            style="background-image: url(img/Background/member.jpg);">
+            <h1 class=" member-head animate__animated wow animate__fadeInUp">KeyGEn Family</h1>
             <p style="padding-bottom: 1rem;" class="animate__animated wow animate__fadeInUp text ">
-            In KeyGenCoders, it's like a big coding family. We all work together to solve problems and write cool code. Imagine it's a big kitchen, and everyone has different ingredients and recipes. We share ideas, help each other when we're stuck, and make amazing dishes of code together. It's not just about coding; it's about learning and having fun. In this big coding kitchen, we all bring something special, and that's what makes KeyGenCoders awesome! </p>      
+                In KeyGenCoders, it's like a big coding family. We all work together to solve problems and write cool
+                code. Imagine it's a big kitchen, and everyone has different ingredients and recipes. We share ideas,
+                help each other when we're stuck, and make amazing dishes of code together. It's not just about coding;
+                it's about learning and having fun. In this big coding kitchen, we all bring something special, and
+                that's what makes KeyGenCoders awesome! </p>
             <div class="members-container">
                 <div class="keygen-header animate__animated wow animate__fadeInUp">Club Convenors</div>
                 <div class="keygen-container">
@@ -362,6 +406,7 @@
                             <div class="member-card-front">
                                 <img class="member-image" src="img/members/Vaibhavi.png" alt="Member Image ">
                                 <div class="member-title">Vaibhavi Roy</div>
+                                <h3>President</h3>
                                 <div class="click-to-flip-front">Click For About</div>
                             </div>
                             <div class="member-card-back">
@@ -370,9 +415,12 @@
                                     Student @KGEC <br> 4th Year CSE.<br>
                                     Development<br>
                                     Designing<br>
-                                    Competitive Programming   
+                                    Competitive Programming
                                 </div>
-                                <div class="member-social"><a href="https://www.linkedin.com/in/vaibhavi-roy/" target="_blank"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/vaibhavi-roy" target="_blank"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a href="https://www.linkedin.com/in/vaibhavi-roy/"
+                                        target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a> | <a
+                                        href="https://github.com/vaibhavi-roy" target="_blank"><i class="fab fa-github">
+                                            Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
@@ -382,14 +430,19 @@
                             <div class="member-card-front">
                                 <img class="member-image" src="img/members/Sarabinda.jpg" alt="Member Image ">
                                 <div class="member-title">Sarabinda Roy</div>
+                                <h3>Outreach Lead</h3>
                                 <div class="click-to-flip-front">Click For About</div>
                             </div>
                             <div class="member-card-back">
                                 <div class="card-header">About</div>
                                 <div class="member-description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus a fugit ratione? Aut possimus rerum ea debitis odio a nihil aperiam ipsum, totam cupiditate tempore ex minus consequatur ut, ducimus nam. Tenetur quidem eaque esse eos. 
+                                    Student @KGEC <br> 4th Year CSE.<br>
+                                    Full Stack Web Development.<br>
+                                    Data Structures & Algorithms.
                                 </div>
-                                <div class="member-social"><a href="https://in.linkedin.com/"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a href="https://in.linkedin.com/"><i
+                                            class="fab fa-linkedin"> LinkedIn</i></a> | <a href="https://github.com/"><i
+                                            class="fab fa-github"> Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
@@ -399,18 +452,22 @@
                             <div class="member-card-front">
                                 <img class="member-image" src="img/members/KrishnaPaulPic.jpeg" alt="Member Image ">
                                 <div class="member-title">Krishna Paul</div>
+                                <h3>Tech Lead</h3>
                                 <div class="click-to-flip-front">Click For About</div>
                             </div>
                             <div class="member-card-back">
                                 <div class="card-header">About</div>
                                 <div class="member-description">
-                                   
+
                                     Student @KGEC <br> 4th Year CSE.<br>
                                     Full Stack Web Development.<br>
                                     App Development.<br>
                                     Data Structures & Algorithms.
                                 </div>
-                                <div class="member-social"><a href="https://www.linkedin.com/in/krishna-paul-2465a31bb/" target="_blank"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/KrishnapaulGit" target="_blank"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a href="https://www.linkedin.com/in/krishna-paul-2465a31bb/"
+                                        target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a> | <a
+                                        href="https://github.com/KrishnapaulGit" target="_blank"><i
+                                            class="fab fa-github"> Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
@@ -420,21 +477,26 @@
                             <div class="member-card-front">
                                 <img class="member-image" src="img/members/Partha.jpeg" alt="Member Image ">
                                 <div class="member-title">Partha Bhowmik</div>
+                                <h3>CP Lead</h3>
                                 <div class="click-to-flip-front">Click For About</div>
                             </div>
                             <div class="member-card-back">
                                 <div class="card-header">About</div>
                                 <div class="member-description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus a fugit ratione? Aut possimus rerum ea debitis odio a nihil aperiam ipsum, totam cupiditate tempore ex minus consequatur ut, ducimus nam. Tenetur quidem eaque esse eos. 
-                                </div>
-                                <div class="member-social"><a href="https://in.linkedin.com/"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/"><i class="fab fa-github">  Github</i></a></div>
+                                    Student @KGEC <br> 4th Year IT.<br>
+                                    Web Development.<br>
+                                    Competitive Programming<br>
+                                    Data Structures & Algorithms. </div>
+                                <div class="member-social"><a href="https://in.linkedin.com/"><i
+                                            class="fab fa-linkedin"> LinkedIn</i></a> | <a href="https://github.com/"><i
+                                            class="fab fa-github"> Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="keygen-header animate__animated wow animate__fadeInUp">
-                    Club Members 
+                    Club Members
                 </div>
                 <div class="keygen-container">
                     <div class="member-card animate__animated wow animate__fadeInUp" onclick="flipCard(this)">
@@ -447,9 +509,13 @@
                             <div class="member-card-back">
                                 <div class="card-header">About</div>
                                 <div class="member-description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus a fugit ratione? Aut possimus rerum ea debitis odio a nihil aperiam ipsum, totam cupiditate tempore ex minus consequatur ut, ducimus nam. Tenetur quidem eaque esse eos. 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus a fugit
+                                    ratione? Aut possimus rerum ea debitis odio a nihil aperiam ipsum, totam cupiditate
+                                    tempore ex minus consequatur ut, ducimus nam. Tenetur quidem eaque esse eos.
                                 </div>
-                                <div class="member-social"><a href="https://in.linkedin.com/"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a href="https://in.linkedin.com/"><i
+                                            class="fab fa-linkedin"> LinkedIn</i></a> | <a href="https://github.com/"><i
+                                            class="fab fa-github"> Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
@@ -464,9 +530,13 @@
                             <div class="member-card-back">
                                 <div class="card-header">About</div>
                                 <div class="member-description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus a fugit ratione? Aut possimus rerum ea debitis odio a nihil aperiam ipsum, totam cupiditate tempore ex minus consequatur ut, ducimus nam. Tenetur quidem eaque esse eos. 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus a fugit
+                                    ratione? Aut possimus rerum ea debitis odio a nihil aperiam ipsum, totam cupiditate
+                                    tempore ex minus consequatur ut, ducimus nam. Tenetur quidem eaque esse eos.
                                 </div>
-                                <div class="member-social"><a href="https://in.linkedin.com/"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a href="https://in.linkedin.com/"><i
+                                            class="fab fa-linkedin"> LinkedIn</i></a> | <a href="https://github.com/"><i
+                                            class="fab fa-github"> Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
@@ -485,7 +555,11 @@
                                     Web Development.<br>
                                     App Development.<br>
                                     Data Structures & Algorithms.</div>
-                                <div class="member-social"><a href="https://www.linkedin.com/in/soumyadip-mondal-a58ab0234/" target="_blank"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/MondalSoumyadip" target="_blank"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a
+                                        href="https://www.linkedin.com/in/soumyadip-mondal-a58ab0234/"
+                                        target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a> | <a
+                                        href="https://github.com/MondalSoumyadip" target="_blank"><i
+                                            class="fab fa-github"> Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
@@ -503,7 +577,9 @@
                                     Student @KGEC <br> 4th Year CSE.<br>
                                     Web Development.<br>
                                     Data Structures & Algorithms.</div>
-                                <div class="member-social"><a href="" target="_blank"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="" target="_blank"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a href="" target="_blank"><i class="fab fa-linkedin">
+                                            LinkedIn</i></a> | <a href="" target="_blank"><i class="fab fa-github">
+                                            Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
@@ -522,7 +598,11 @@
                                     Web Development.<br>
                                     C, C++, Java.
                                 </div>
-                                <div class="member-social"><a href="https://www.linkedin.com/in/abhibrata-nandy-812b90253" target="_blank"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/AbhibrataNandy" target="_blank"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a
+                                        href="https://www.linkedin.com/in/abhibrata-nandy-812b90253" target="_blank"><i
+                                            class="fab fa-linkedin"> LinkedIn</i></a> | <a
+                                        href="https://github.com/AbhibrataNandy" target="_blank"><i
+                                            class="fab fa-github"> Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
@@ -540,12 +620,16 @@
                                     Student @KGEC <br> 3rd Year IT.<br>
                                     C, C++<br>
                                 </div>
-                                <div class="member-social"><a href="http://www.linkedin.com/in/jyotirmay-bairagya-33a067263" target="_blank"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/jyotirmay0" target="_blank"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a
+                                        href="http://www.linkedin.com/in/jyotirmay-bairagya-33a067263"
+                                        target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a> | <a
+                                        href="https://github.com/jyotirmay0" target="_blank"><i class="fab fa-github">
+                                            Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="member-card animate__animated wow animate__fadeInUp" onclick="flipCard(this)">
                         <div class="member-card-inner">
                             <div class="member-card-front">
@@ -559,7 +643,10 @@
                                     Student @KGEC <br> 3rd Year CSE.<br>
                                     C, C++, Python<br>
                                 </div>
-                                <div class="member-social"><a href="https://www.linkedin.com/in/waki-hasmi/" target="_blank"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/MWhasmi057" target="_blank"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a href="https://www.linkedin.com/in/waki-hasmi/"
+                                        target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a> | <a
+                                        href="https://github.com/MWhasmi057" target="_blank"><i class="fab fa-github">
+                                            Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
@@ -577,7 +664,10 @@
                                     Student @KGEC <br> 3rd Year CSE.<br>
                                     C, Java, Python<br>
                                 </div>
-                                <div class="member-social"><a href="http://www.linkedin.com/in/ushasi-das-7051a2254" target="_blank"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/join-ushasidas" target="_blank"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a href="http://www.linkedin.com/in/ushasi-das-7051a2254"
+                                        target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a> | <a
+                                        href="https://github.com/join-ushasidas" target="_blank"><i
+                                            class="fab fa-github"> Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
@@ -595,12 +685,15 @@
                                     Student @KGEC <br> 3rd Year CSE.<br>
                                     Web Development<br>
                                 </div>
-                                <div class="member-social"><a href="https://www.linkedin.com/in/arpan-pal-1840a6254" target="_blank"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/Arpangate" target="_blank"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a href="https://www.linkedin.com/in/arpan-pal-1840a6254"
+                                        target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a> | <a
+                                        href="https://github.com/Arpangate" target="_blank"><i class="fab fa-github">
+                                            Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="member-card animate__animated wow animate__fadeInUp" onclick="flipCard(this)">
                         <div class="member-card-inner">
                             <div class="member-card-front">
@@ -613,9 +706,12 @@
                                 <div class="member-description">
                                     Student @KGEC <br> 3rd Year CSE.<br>
                                     C, C++<br>
-        
+
                                 </div>
-                                <div class="member-social"><a href="https://www.linkedin.com/in/archismita-ghosh/" target="_blank"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/ghosharchismita" target="_blank"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a href="https://www.linkedin.com/in/archismita-ghosh/"
+                                        target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a> | <a
+                                        href="https://github.com/ghosharchismita" target="_blank"><i
+                                            class="fab fa-github"> Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
@@ -632,14 +728,18 @@
                                 <div class="member-description">
                                     Student @KGEC <br> 3rd Year CSE.<br>
                                     C, HTML, CSS<br>
-        
+
                                 </div>
-                                <div class="member-social"><a href="https://www.linkedin.com/in/buddhadeb-charmakar-b38050268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/Buddhadeb-kgec" target="_blank"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a
+                                        href="https://www.linkedin.com/in/buddhadeb-charmakar-b38050268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                        target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a> | <a
+                                        href="https://github.com/Buddhadeb-kgec" target="_blank"><i
+                                            class="fab fa-github"> Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="member-card animate__animated wow animate__fadeInUp" onclick="flipCard(this)">
                         <div class="member-card-inner">
                             <div class="member-card-front">
@@ -652,9 +752,13 @@
                                 <div class="member-description">
                                     Student @KGEC <br> 3rd Year IT.<br>
                                     C, HTML, R<br>
-        
+
                                 </div>
-                                <div class="member-social"><a href="https://www.linkedin.com/in/bikram-soren-9260ba254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/TalentlessHuman" target="_blank"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a
+                                        href="https://www.linkedin.com/in/bikram-soren-9260ba254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                        target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a> | <a
+                                        href="https://github.com/TalentlessHuman" target="_blank"><i
+                                            class="fab fa-github"> Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
@@ -673,7 +777,11 @@
                                     Full Stack Web Development.<br>
                                     Blockchain.<br>
                                     Data Structures & Algorithms.</div>
-                                <div class="member-social"><a href="https://www.linkedin.com/in/rajendra-kumar-shaw-824874203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/rajendrakrshaw" target="_blank"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a
+                                        href="https://www.linkedin.com/in/rajendra-kumar-shaw-824874203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                        target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a> | <a
+                                        href="https://github.com/rajendrakrshaw" target="_blank"><i
+                                            class="fab fa-github"> Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
@@ -691,9 +799,12 @@
                                     Student @KGEC <br> 3rd Year CSE.<br>
                                     C, HTML, Python<br>
                                     Data Structures & Algorithms.
-        
+
                                 </div>
-                                <div class="member-social"><a href="https://www.linkedin.com/in/sk-md-tousif-8ab068254" target="_blank"><i class="fab fa-linkedin">  LinkedIn</i></a> | <a href="https://github.com/skmd-tousif" target="_blank"><i class="fab fa-github">  Github</i></a></div>
+                                <div class="member-social"><a href="https://www.linkedin.com/in/sk-md-tousif-8ab068254"
+                                        target="_blank"><i class="fab fa-linkedin"> LinkedIn</i></a> | <a
+                                        href="https://github.com/skmd-tousif" target="_blank"><i class="fab fa-github">
+                                            Github</i></a></div>
                                 <div class="click-to-flip-back">Click to Flip</div>
                             </div>
                         </div>
@@ -715,244 +826,264 @@
                         <div class="member-title">Asif Iqbal</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Sayan Chatterjee</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Ananya Ghosh</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Arka Dash</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Arko Kundu</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Arnab Kundu</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Biswajit Malakar</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Durgeshwar</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Ishita Mukherjee</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Jay Kumar Lal</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Krishanu Biswas</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Madhurima Khan</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Nayan Banik</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Pabitra Halder</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Rohit Chowdhury</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Rohit Karmakar</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Shatakshi Saha</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Shrabani Gupta</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Soumyapriya Goswami</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Sounava Chatterjee</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Sourajeet Routh</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Sourashmi Das</div>
                     </div>
                     <div class="student-card animate__animated wow animate__fadeInUp">
-                        <img class="student-image" src="img/members/profile-image.jpeg"€ alt="Member Image ">
+                        <img class="student-image" src="img/members/profile-image.jpeg" € alt="Member Image ">
                         <div class="member-title">Souvik Dey</div>
                     </div>
                 </div>
-        </div>
-        
-</section>
-
-
-<!--Resources Section-->
-<section id="resource-section" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/Background/resource.png);">
-    <h1 class=" member-head animate__animated wow animate__fadeInUp">Resources</h1>
-    <p class="text animate__animated wow animate__fadeInUp">
-        These Resources can be help in your Coding and Development Journey. Follow our Exclusive Resources in your Coding and Development Journey .Here we uploading Resources day by day.To maximize your journey, we encourage you to follow the most of our exclusive resources tailored just for you.
-    </p>    
-        <div class="course-cards-container">
-            <div class="course-card animate__animated wow animate__fadeInUp">
-                <img class="course-image" src="img/resource/C.png">
-                <div class="course-title">C</div>
-                <div class="course-description">Programming</div>
-                <a href="https://docs.google.com/document/d/1wiTRD9V1D4t5HsPDVg7aJXu_xvbcxw_4I40lY-a2USs/edit?usp=sharing" target="_blank">Get Resources</a>
             </div>
-        <div class="course-card animate__animated wow animate__fadeInUp">
-            <img class="course-image" src="img/resource/CPP.png">
-            <div class="course-title">C++</div>
-            <div class="course-description">Programming</div>
-            <a href="https://docs.google.com/document/d/1oUfkwELQoz9APU18NEcHtbScdjeXJiLuLcuQxGxCwl0/edit?usp=sharing" target="_blank">Get Resources</a>
-        </div>
 
-        <div class="course-card animate__animated wow animate__fadeInUp">
-            <img class="course-image" src="img/resource/Java.png">
-            <div class="course-title">Java</div>
-            <div class="course-description">Programming</div>
-            <a href="https://docs.google.com/document/d/1o0Cv-nLnPkpuRFh2X1u3sL4xGkpDw4zP9etbKu-HZ4s/edit?usp=sharing" target="_blank">Get Resources</a>
-        </div>
-        <div class="course-card animate__animated wow animate__fadeInUp">
-            <img class="course-image" src="img/resource/dsa.png">
-            <div class="course-title">DSA</div>
-            <div class="course-description">C,C++,Java etc</div>
-            <a href="https://docs.google.com/document/d/1gRrt5Or9ttIbpG-al_myyb3x2d5JK295ag9jA3YY9HE/edit?usp=sharing" target="_blank">Get Resources</a>
-        </div>
-        <div class="course-card animate__animated wow animate__fadeInUp">
-            <img class="course-image" src="img/resource/webfront.jpg">
-            <div class="course-title">Web Dev</div>
-            <div class="course-description">Frontend</div>
-            <a href="https://docs.google.com/document/d/1a3jExMmhcwrAku-bVuRTkjDCQKjzX7PBqPqqedzZEgE/edit?usp=sharing" target="_blank">Get Resources</a>
-        </div>
-        <div class="course-card animate__animated wow animate__fadeInUp">
-            <img class="course-image" src="img/resource/webback.jpg">
-            <div class="course-title">Web Dev</div>
-            <div class="course-description">Backend</div>
-            <a href="https://docs.google.com/document/d/1WIQN5H1IlPvf0IgAK9KtwK9z0O2cyTXBfjuU6zx5Ec8/edit?usp=sharing" target="_blank">Get Resources</a>
-        </div>
-        <div class="course-card animate__animated wow animate__fadeInUp">
-            <img class="course-image" src="img/resource/App.jpg">
-            <div class="course-title">App Dev</div>
-            <div class="course-description">Using Kotlin</div>
-            <a href="https://docs.google.com/document/d/1kiNwHr_c2sE1NcFIuIyWSX2xzD05P6nn2hBz6dDMiOk/edit?usp=sharing" target="_blank">Get Resources</a>
-        </div>
-        <div class="course-card animate__animated wow animate__fadeInUp">
-            <img class="course-image" src="img/resource/Flutter1.png">
-            <div class="course-title">App Dev</div>
-            <div class="course-description">Using Flutter</div>
-            <a href="https://docs.google.com/document/d/1BkFMfvWi2AWWtfekgWwMRWcY82I1NAiYhWFl_y2qEHo/edit?usp=sharing" target="_blank">Get Resources</a>
-        </div>
-
-    </div>
+        </section>
 
 
+        <!--Resources Section-->
+        <section id="resource-section" class="parallax" data-stellar-background-ratio="0.5"
+            style="background-image: url(img/Background/resource.png);">
+            <h1 class=" member-head animate__animated wow animate__fadeInUp">Resources</h1>
+            <p class="text animate__animated wow animate__fadeInUp">
+                These Resources can be help in your Coding and Development Journey. Follow our Exclusive Resources in
+                your Coding and Development Journey .Here we uploading Resources day by day.To maximize your journey, we
+                encourage you to follow the most of our exclusive resources tailored just for you.
+            </p>
+            <div class="course-cards-container">
+                <div class="course-card animate__animated wow animate__fadeInUp">
+                    <img class="course-image" src="img/resource/C.png">
+                    <div class="course-title">C</div>
+                    <div class="course-description">Programming</div>
+                    <a href="https://docs.google.com/document/d/1wiTRD9V1D4t5HsPDVg7aJXu_xvbcxw_4I40lY-a2USs/edit?usp=sharing"
+                        target="_blank">Get Resources</a>
+                </div>
+                <div class="course-card animate__animated wow animate__fadeInUp">
+                    <img class="course-image" src="img/resource/CPP.png">
+                    <div class="course-title">C++</div>
+                    <div class="course-description">Programming</div>
+                    <a href="https://docs.google.com/document/d/1oUfkwELQoz9APU18NEcHtbScdjeXJiLuLcuQxGxCwl0/edit?usp=sharing"
+                        target="_blank">Get Resources</a>
+                </div>
+
+                <div class="course-card animate__animated wow animate__fadeInUp">
+                    <img class="course-image" src="img/resource/Java.png">
+                    <div class="course-title">Java</div>
+                    <div class="course-description">Programming</div>
+                    <a href="https://docs.google.com/document/d/1o0Cv-nLnPkpuRFh2X1u3sL4xGkpDw4zP9etbKu-HZ4s/edit?usp=sharing"
+                        target="_blank">Get Resources</a>
+                </div>
+                <div class="course-card animate__animated wow animate__fadeInUp">
+                    <img class="course-image" src="img/resource/dsa.png">
+                    <div class="course-title">DSA</div>
+                    <div class="course-description">C,C++,Java etc</div>
+                    <a href="https://docs.google.com/document/d/1gRrt5Or9ttIbpG-al_myyb3x2d5JK295ag9jA3YY9HE/edit?usp=sharing"
+                        target="_blank">Get Resources</a>
+                </div>
+                <div class="course-card animate__animated wow animate__fadeInUp">
+                    <img class="course-image" src="img/resource/webfront.jpg">
+                    <div class="course-title">Web Dev</div>
+                    <div class="course-description">Frontend</div>
+                    <a href="https://docs.google.com/document/d/1a3jExMmhcwrAku-bVuRTkjDCQKjzX7PBqPqqedzZEgE/edit?usp=sharing"
+                        target="_blank">Get Resources</a>
+                </div>
+                <div class="course-card animate__animated wow animate__fadeInUp">
+                    <img class="course-image" src="img/resource/webback.jpg">
+                    <div class="course-title">Web Dev</div>
+                    <div class="course-description">Backend</div>
+                    <a href="https://docs.google.com/document/d/1WIQN5H1IlPvf0IgAK9KtwK9z0O2cyTXBfjuU6zx5Ec8/edit?usp=sharing"
+                        target="_blank">Get Resources</a>
+                </div>
+                <div class="course-card animate__animated wow animate__fadeInUp">
+                    <img class="course-image" src="img/resource/App.jpg">
+                    <div class="course-title">App Dev</div>
+                    <div class="course-description">Using Kotlin</div>
+                    <a href="https://docs.google.com/document/d/1kiNwHr_c2sE1NcFIuIyWSX2xzD05P6nn2hBz6dDMiOk/edit?usp=sharing"
+                        target="_blank">Get Resources</a>
+                </div>
+                <div class="course-card animate__animated wow animate__fadeInUp">
+                    <img class="course-image" src="img/resource/Flutter1.png">
+                    <div class="course-title">App Dev</div>
+                    <div class="course-description">Using Flutter</div>
+                    <a href="https://docs.google.com/document/d/1BkFMfvWi2AWWtfekgWwMRWcY82I1NAiYhWFl_y2qEHo/edit?usp=sharing"
+                        target="_blank">Get Resources</a>
+                </div>
+
+            </div>
 
 
 
-    
 
-</section>
-    
-<!--Contact Us Section-->
 
-    <section id="contact-us" class="tri parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/Background/contact.png);">
+
+
+        </section>
+
+        <!--Contact Us Section-->
+
+        <section id="contact-us" class="tri parallax" data-stellar-background-ratio="0.5"
+            style="background-image: url(img/Background/contact.png);">
             <h1 class="animate__animated wow animate__fadeInUp">Join Us</h1>
             <!-- <h4 class="animate__animated animate__zoomIn tri-under" >----------------------------</h4> -->
             <div class="contact-wrap ">
                 <div class="contact-in animate__animated wow animate__fadeInUp">
                     <h1 class="animate__animated wow animate__zoomIn contact-info">Follow Us</h1>
-                    <p>Your journey with KeyGEnCoders Club KGEC is about to get even more exciting! Follow us on Facebook, Instagram, LinkedIn and stay updated on all the coding excitement. Your coding journey just got a whole lot more connected!
+                    <p>Your journey with KeyGEnCoders Club KGEC is about to get even more exciting! Follow us on
+                        Facebook, Instagram, LinkedIn and stay updated on all the coding excitement. Your coding journey
+                        just got a whole lot more connected!
                     </p>
 
-                    <i class="fab fa-facebook fbook"></i><a href="https://www.facebook.com/KeyGEnCoders" target="_blank">Facebook</a><br>
-                    <i class="fab fa-linkedin link"></i><a href="https://www.linkedin.com/company/keygencoders/" target="_blank">LinkedIn</a><br>
-                    <i class="fab fa-instagram insta"></i><a href="https://www.instagram.com/keygen_coders/" target="_blank">Instagram</a>
+                    <i class="fab fa-facebook fbook"></i><a href="https://www.facebook.com/KeyGEnCoders"
+                        target="_blank">Facebook</a><br>
+                    <i class="fab fa-linkedin link"></i><a href="https://www.linkedin.com/company/keygencoders/"
+                        target="_blank">LinkedIn</a><br>
+                    <i class="fab fa-instagram insta"></i><a href="https://www.instagram.com/keygen_coders/"
+                        target="_blank">Instagram</a>
 
 
                 </div>
                 <div class="contact-in animate__animated wow animate__zoomIn">
-                    <h1 >Join Our Newsletter</h1>
-                    <form class="animate__animated wow animate__fadeInUp" method="post" action="newsletter.php">
-                        <input type="text" placeholder="Full Name" class="contact-in-input" name="name">
-                        <input type="email" placeholder="Email Address" class="contact-in-input" name="email">
-                        <input type="number" placeholder="Contact Number" class="contact-in-input" name="contact">
+                    <h1>Join Our Newsletter</h1>
+                    <form class="animate__animated wow animate__fadeInUp" id="notify-form">
+                        <input type="text" placeholder="Full Name" class="contact-in-input" id="name" required>
+                        <input type="email" placeholder="Email Address" class="contact-in-input" id="email" required>
+                        <input type="number" placeholder="Contact Number" class="contact-in-input" id="contact"
+                            required>
                         <button class="join-btn" type="submit">Notify Me</button>
-                     </form>
+                    </form>
+
+                    <p id="message"></p>
                 </div>
                 <!-- <div class="contact-in animate__animated wow animate__slideInRight"> -->
-            <!-- <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Kalyani%20Government%20Engineering%20College" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-            <!-- <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Kalyani%20Government%20Engineering%20College+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">fitness tracker</a></iframe></div> -->
+                <!-- <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Kalyani%20Government%20Engineering%20College" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                <!-- <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Kalyani%20Government%20Engineering%20College+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">fitness tracker</a></iframe></div> -->
                 <!-- </div> -->
             </div>
-    </section>
-    <!--end contact-us-->
+        </section>
+        <!--end contact-us-->
 
-    <!---->
+        <!---->
 
 
-    <!--Footer-->
-    <footer class="footer-distributed">
+        <!--Footer-->
+        <footer class="footer-distributed">
 
-        <div class="footer-left">
-      <img src="img/keygenlogo.png" class="animate__animated wow animate__fadeInUp">
-            <!-- <h5>Created in 2021 by @<span>TriWeb</span></h5> -->
+            <div class="footer-left">
+                <img src="img/keygenlogo.png" class="animate__animated wow animate__fadeInUp">
+                <!-- <h5>Created in 2021 by @<span>TriWeb</span></h5> -->
 
-            <p class="animate__animated wow animate__fadeInUp footer-links">
-                <a href="#page-top">Home</a>
-                |
-                <a href="#about">About</a>
-                |
-                <a href="#events">Events</a>
-                |
-                <a href="#members">Family</a>
-                |
-                <a href="#resource-section">Resources</a>
-            </p>
+                <p class="animate__animated wow animate__fadeInUp footer-links">
+                    <a href="#page-top">Home</a>
+                    |
+                    <a href="#about">About</a>
+                    |
+                    <a href="#events">Events</a>
+                    |
+                    <a href="#members">Family</a>
+                    |
+                    <a href="#resource-section">Resources</a>
+                </p>
 
-            <!-- <p class="footer-company-name">&copy;2021 TriWeb Pvt. Ltd</p> -->
-        </div>
-
-        <div class="footer-center animate__animated wow animate__fadeInUp">
-            <div>
-                <span>Contact Details</span>
-                <i class="fa fa-map-marker"></i>
-                  <p>Kalyani, Nadia, West Bengal-741235</p>
+                <!-- <p class="footer-company-name">&copy;2021 TriWeb Pvt. Ltd</p> -->
             </div>
 
-            <!-- <div>
+            <div class="footer-center animate__animated wow animate__fadeInUp">
+                <div>
+                    <span>Contact Details</span>
+                    <i class="fa fa-map-marker"></i>
+                    <p>Kalyani, Nadia, West Bengal-741235</p>
+                </div>
+
+                <!-- <div>
                 <i class="fa fa-phone"></i>
                 <p>+91**********</p>
             </div> -->
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:keygencoders@gmail.com">support@keygencoders.com</a></p>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:keygencoders@gmail.com">support@keygencoders.com</a></p>
+                </div>
             </div>
-        </div>
-        <div class="footer-right animate__animated wow animate__fadeInUp">
-            <p class="footer-company-about">
-                <span style="padding-left: 10px;">Important Links</span>
+            <div class="footer-right animate__animated wow animate__fadeInUp">
+                <p class="footer-company-about">
+                    <span style="padding-left: 10px;">Important Links</span>
                 <p class="footer-links">
                     <a href="https://www.kgec.edu.in/" target="_blank">KGEC Website</a>
                     |
@@ -961,20 +1092,23 @@
                     <a href="#contact-us">FAQs</a>
                     |
                     <a href="#contact-us">Help</a>
-                </p>	
+                </p>
                 <div class="footer-icons">
-                <a href="https://www.facebook.com/KeyGEnCoders" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/keygen_coders/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/keygencoders/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/KeyGEnCoders" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/keygen_coders/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/keygencoders/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
             </div>
-        </div>
-    <p id="copyright" class="animate__animated wow animate__fadeInUp">Developed by KeyGEnCoders | All &copy; copyrights reserved</p>
-    <p id="version" class="animate__animated wow animate__fadeInUp">Version : 1.0</p>
+            <p id="copyright" class="animate__animated wow animate__fadeInUp">Developed by Krishna Paul Tech Lead
+                @KeyGEnCoders | All &copy; copyrights reserved</p>
+            <p id="version" class="animate__animated wow animate__fadeInUp">Version : 1.3</p>
 
-</footer>
+        </footer>
 
-<!--Pop Up Poster-->
-<!-- <div id="imagePopup">
+        <!--Pop Up Poster-->
+        <!-- <div id="imagePopup">
     <div id="imagePopupContent">
         <span id="imageCloseButton">&times;</span>
         <img src="img/popup/freshers_orientation.jpg">
@@ -984,51 +1118,53 @@
 
 
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/jquery.mixitup.min.js"></script>
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
-    <script type="text/javascript" src="js/switcher.js"></script>
-    <script src="js/script.js"></script>
-</section>
-</section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    new WOW().init();
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/jquery.mixitup.min.js"></script>
+        <script src="js/jquery.fancybox.pack.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="js/switcher.js"></script>
+        <script src="js/script.js"></script>
+    </section>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
     </script>
-<script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
- <!-- Scroll To Top -->
- <script>
-    window.addEventListener('scroll',function(){
-        var scroll = document.querySelector('.ScrollTop')
-        scroll.classList.toggle("active",window.scrollY > 500)
-    })
-    function scrollToTop(){
-        window.scrollTo({
-            top:0,
-            behavior:'smooth'
+    <!-- Scroll To Top -->
+    <script>
+        window.addEventListener('scroll', function () {
+            var scroll = document.querySelector('.ScrollTop')
+            scroll.classList.toggle("active", window.scrollY > 500)
         })
-    }
-</script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
 
-<!--Members flip card-->
-<script>
-    function flipCard(card) {
-        card.classList.toggle("flip");
-    }
-</script>
+    <!--Members flip card-->
+    <script>
+        function flipCard(card) {
+            card.classList.toggle("flip");
+        }
+    </script>
 
-<!--Pop up Poster JS-->
-<!-- <script>
+    <!--Pop up Poster JS-->
+    <!-- <script>
     document.addEventListener('DOMContentLoaded', function () {
         const imagePopup = document.getElementById('imagePopup');
         const imageCloseButton = document.getElementById('imageCloseButton');
@@ -1051,6 +1187,112 @@
         
     
     </script> -->
+
+    <!-- Firebase -->
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyCdQ9be7rNFmv_RFh_t65GpyaXcKczFRiw",
+            authDomain: "keygencontact-191c8.firebaseapp.com",
+            projectId: "keygencontact-191c8",
+            storageBucket: "keygencontact-191c8.appspot.com",
+            messagingSenderId: "595281779597",
+            appId: "1:595281779597:web:ec98e9b67abec4e0e03bc4"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // Handle form submission
+        document.getElementById('notify-form').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const contact = document.getElementById('contact').value;
+
+            try {
+                // Store data in Firestore
+                await addDoc(collection(db, "notifyDB"), {
+                    name: name,
+                    email: email,
+                    contact: contact
+                });
+
+                // Send email using Brevo (Sendinblue)
+                const data = {
+                    sender: { name: "KeyGEnCoders", email: "keygenresources@gmail.com" },
+                    to: [{ email: email, name: name }],
+                    subject: "Thank you for joining our newsletter!",
+                    htmlContent: `
+                <p style="text-align: center;">
+                <img src="https://krishnapaulgit.github.io/keygencoder/img/banner/2.jpg" alt="KeyGEnCoders Banner" style="max-width: 100%; height: auto;">
+            </p>
+            <p>Hello ${name},</p>
+
+            <p>We're thrilled to have you onboard! 🎉<br>Thank you for joining the <strong>KeyGEnCoders</strong> newsletter. You're now part of an amazing community where you'll receive:</p>
+
+            <ul>
+            <li>💡 <strong>Exclusive Updates</strong>: Stay ahead with the latest news, insights, and tips from the world of web development and technology.</li>
+            <li>🚀 <strong>Special Resources</strong>: Get access to our free resources, tutorials, and tools designed to enhance your coding journey.</li>
+            <li>🎁 <strong>Early Access</strong>: Be the first to know about new projects, features, and special events.</li>
+            </ul>
+
+            <p>We’re all about empowering developers like you to reach new heights. Whether you're just starting or looking to sharpen your skills, we’ve got exciting things lined up!</p>
+
+            <p>If you have any questions or suggestions, feel free to reply to this email. We’d love to hear from you.</p>
+
+            <p><strong>Stay tuned</strong> for our next update. Until then, happy coding! 💻</p>
+
+            <p><strong>Best regards,</strong><br>The KeyGEnCoders Team</p>
+            <p>Coding Club, KGEC</p>
+
+
+            <p style="text-align: center;">
+            <a href="https://www.facebook.com/KeyGEnCoders" target="_blank" style="margin-right: 10px;">
+                <img src="https://cdn.iconscout.com/icon/free/png-512/free-facebook-circle-logo-icon-download-in-svg-png-gif-file-formats--twitter-fb-social-media-pack-logos-icons-1583148.png?f=webp&w=256" alt="Facebook" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://www.instagram.com/keygen_coders/" target="_blank" style="margin-right: 10px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://www.linkedin.com/company/keygencoders/" target="_blank">
+                <img src="https://cdn.iconscout.com/icon/free/png-512/free-linkedin-circle-logo-icon-download-in-svg-png-gif-file-formats--social-media-logos-icons-2745480.png?f=webp&w=256" alt="LinkedIn" style="width: 24px; height: 24px;">
+            </a>
+            </p>
+
+            <p style="text-align: center;">
+            <a href="https://krishnapaulgit.github.io/keygencoder/" target="_blank" rel="noopener">Visit Website</a>
+            </p>
+                `
+        };
+
+                const response = await fetch("https://api.brevo.com/v3/smtp/email", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "api-key": "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" // Replace with your Brevo API key
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    document.getElementById('message').innerText = "Thank you for joining our newsletter!";
+                } else {
+                    const errorData = await response.json();
+                    document.getElementById('message').innerText = "Error sending email: " + errorData.message;
+                }
+            } catch (error) {
+                document.getElementById('message').innerText = "Error: " + error.message;
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>
